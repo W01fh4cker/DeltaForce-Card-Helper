@@ -5,6 +5,8 @@
 测试`python`版本为`3.9.13`，运行命令如下：
 
 ```powershell
+git clone https://github.com/W01fh4cker/DeltaForce-Card-Helper.git
+cd DeltaForce-Card-Helper
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
 ```
 
