@@ -216,7 +216,8 @@ class TradingBotApp:
                     price_int = int(price)
                     if price_int <= ideal_price * 10000:
                         self.update_log(f"识别价格：{price} --> 符合条件！推荐购买（≤{ideal_price}万）")
-                        pyautogui.click(int(screen_width * 0.8323), int(screen_height * 0.8528))
+                        pyautogui.moveTo(int(screen_width * 0.874), int(screen_height * 0.8472))
+                        pyautogui.click()
                         self.master.bell()
                     else:
                         self.update_log(f"识别价格：{price} 价格过高（>{ideal_price}万）")
