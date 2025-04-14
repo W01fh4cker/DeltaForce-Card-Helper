@@ -16,11 +16,12 @@ pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
 python CardHelper.py
 ```
 使用时，请确保您的三角洲行动应用处于如下界面，并且搜索框不应有任何输入内容：
-![image](https://github.com/user-attachments/assets/69d56d40-b745-49d3-97b0-f45a8ebde2b6)
+![](https://github.com/user-attachments/assets/69d56d40-b745-49d3-97b0-f45a8ebde2b6)
 
 通过键盘的`s`和`q`来控制脚本的启停，效果如图：
 
 ![](https://github.com/W01fh4cker/picx-images-hosting/raw/master/image-20250413031736546.7w70cudjqt.webp)
+![](https://github.com/user-attachments/assets/dafaa758-c3cb-4037-b7b7-7b3ed38a241f)
 
 # 二、说明与TODO
 
