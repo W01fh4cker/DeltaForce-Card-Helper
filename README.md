@@ -2,11 +2,13 @@
 
 # 一、使用
 
+## 1.1 Python脚本（不推荐）
+
 测试`python`版本为`3.9.13`，运行命令如下：
 
 ```powershell
 git clone https://github.com/W01fh4cker/DeltaForce-Card-Helper.git
-cd DeltaForce-Card-Helper
+cd DeltaForce-Card-Helper/Src/Python
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
 ```
 
@@ -22,6 +24,14 @@ python CardHelper.py
 
 ![](https://github.com/W01fh4cker/picx-images-hosting/raw/master/image-20250413031736546.7w70cudjqt.webp)
 ![](https://github.com/user-attachments/assets/dafaa758-c3cb-4037-b7b7-7b3ed38a241f)
+
+## 1.2 C# 脚本（推荐）
+
+使用`VS 2022`打开`DeltaForce-Card-Helper/Src/Csharp/DeltaForce-Card-Helper.sln`工程文件，需要安装相关`nuget`包，并安装`Devexpress 22.x`版本，详情自行百度，懒得自己编译的用我打包好的即可。
+
+填写参数，测试如图：
+
+![](https://github.com/user-attachments/assets/3c42a996-5866-4412-876f-ae4e7e7b3240)
 
 # 二、说明与TODO
 

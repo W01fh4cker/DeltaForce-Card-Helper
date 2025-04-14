@@ -1,7 +1,0 @@
-ttkbootstrap
-numpy
-pyperclip
-pyautogui
-keyboard
-pytesseract
-opencv-python
