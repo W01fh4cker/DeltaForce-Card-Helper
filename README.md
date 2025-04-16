@@ -27,8 +27,11 @@ python CardHelper.py
 
 ## 1.2 C# 脚本（推荐）
 
-使用`VS 2022`打开`DeltaForce-Card-Helper/Src/Csharp/DeltaForce-Card-Helper.sln`工程文件，需要安装相关`nuget`包，并安装`Devexpress 22.x`版本，详情自行百度，懒得自己编译的用我打包好的即可。
+使用`VS 2022`打开`DeltaForce-Card-Helper/Src/Csharp/DeltaForce-Card-Helper.sln`工程文件，需要安装相关`nuget`包，并安装`Devexpress 22.x`版本，详情自行百度，懒得自己编译的用我打包好的即可。  
+> 为防止出现未知错误导致错误购买高价格卡，建议可以先填写参数1 1 1进行测试，看价格识别是否有异常，如果没有，再重新启动程序抢卡即可。
 
+同样的，以管理员权限启动，启动时请确保您的三角洲行动应用处于如下界面，并且搜索框不应有任何输入内容：  
+![](https://github.com/user-attachments/assets/69d56d40-b745-49d3-97b0-f45a8ebde2b6)
 填写参数，测试如图：
 
 ![](https://github.com/user-attachments/assets/3c42a996-5866-4412-876f-ae4e7e7b3240)
