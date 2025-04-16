@@ -40,6 +40,8 @@ python CardHelper.py
 ⚠️ **高度实验性版本**
  本脚本处于早期开发阶段，核心功能尚未完善，仅实现基础界面框架与点击交互逻辑，仅供开发者学习技术原理或进行内部测试。
 
+- 2025.4.15 发布0.0.2-dev版本，修复了https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/1和https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/2。
+
 ### ▋ 重要风险提示
 
 🚨 **使用本脚本可能导致**：

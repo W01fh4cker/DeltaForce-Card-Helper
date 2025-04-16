@@ -2,7 +2,6 @@
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -10,11 +9,9 @@ namespace DeltaForce_Card_Helper
 {
     public partial class DeltaForceCardHelperForm : DevExpress.XtraEditors.XtraForm
     {
-        // 添加标志位
         private bool isBuying = false;
         private bool shouldStop = false;
 
-        // 热键相关API
         [DllImport("user32.dll")]
         public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
 
@@ -31,7 +28,6 @@ namespace DeltaForce_Card_Helper
 
         protected override void WndProc(ref Message m)
         {
-            // 处理热键消息
             if (m.Msg == 0x0312 && m.WParam.ToInt32() == HOTKEY_ID && isBuying)
             {
                 shouldStop = true;
@@ -42,7 +38,6 @@ namespace DeltaForce_Card_Helper
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            // 注销热键
             UnregisterHotKey(this.Handle, HOTKEY_ID);
             base.OnFormClosing(e);
         }
@@ -81,7 +76,7 @@ namespace DeltaForce_Card_Helper
                         $"Card_{timestamp}.png"
                     );
                     Task.Delay(200).Wait();
-                    string res = DeltaForceUtils.RecognizeTextFromDeltaForce(0.8553f, 0.8111f, 0.8927f, 0.8315f, autoPath, true);
+                    string res = DeltaForceUtils.RecognizeTextFromDeltaForce(0.8500f, 0.8111f, 0.8927f + (0.8927f - 0.8553f), 0.8315f, autoPath, true);
                     log_to_edit($"识别到价格: {res}");
 
                     if (decimal.TryParse(res, out decimal currentPrice))
