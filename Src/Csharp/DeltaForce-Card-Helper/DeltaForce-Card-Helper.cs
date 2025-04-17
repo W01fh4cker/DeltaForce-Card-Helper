@@ -76,7 +76,7 @@ namespace DeltaForce_Card_Helper
                         $"Card_{timestamp}.png"
                     );
                     Task.Delay(200).Wait();
-                    string res = DeltaForceUtils.RecognizeTextFromDeltaForce(0.8500f, 0.8111f, 0.8927f + (0.8927f - 0.8553f), 0.8315f, autoPath, true);
+                    string res = DeltaForceUtils.RecognizeTextFromDeltaForce(0.8400f, 0.8000f, 0.8927f + (0.8927f - 0.8553f), 0.8315f, autoPath, true);
                     log_to_edit($"识别到价格: {res}");
 
                     if (decimal.TryParse(res, out decimal currentPrice))
