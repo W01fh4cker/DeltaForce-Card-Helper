@@ -268,7 +268,7 @@ namespace DeltaForce_Card_Helper.Utils
                 {
                     g.CopyFromScreen(left, top, 0, 0, new Size(width, height));
                 }
-                bmp.Save(savePath);
+                // bmp.Save(savePath);
                 if (isDigit) {
                     using (var engine = new TesseractEngine(TesseractDataPath, "eng", EngineMode.LstmOnly))
                     {
