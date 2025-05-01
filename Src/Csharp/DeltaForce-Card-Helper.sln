@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeltaForce-Card-Helper", "DeltaForce-Card-Helper\DeltaForce-Card-Helper.csproj", "{342FA4A1-3FC6-47BC-9258-DF786F1FCA75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeltaForce-ScreenSnipperTool", "DeltaForce-ScreenSnipperTool\DeltaForce-ScreenSnipperTool.csproj", "{19D220D1-184B-4BDC-9A82-4F43123E73C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{342FA4A1-3FC6-47BC-9258-DF786F1FCA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{342FA4A1-3FC6-47BC-9258-DF786F1FCA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{342FA4A1-3FC6-47BC-9258-DF786F1FCA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D220D1-184B-4BDC-9A82-4F43123E73C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D220D1-184B-4BDC-9A82-4F43123E73C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D220D1-184B-4BDC-9A82-4F43123E73C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D220D1-184B-4BDC-9A82-4F43123E73C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26BD8E53-2DF2-4F9C-8260-025F86F2F4B1}
 	EndGlobalSection
 EndGlobal

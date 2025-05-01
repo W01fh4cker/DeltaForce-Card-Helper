@@ -263,10 +263,12 @@ namespace DeltaForce_Card_Helper.Utils
             // 3. 截图
             using (Bitmap bmp = new Bitmap(width, height))
             {
+                
                 using (Graphics g = Graphics.FromImage(bmp))
                 {
                     g.CopyFromScreen(left, top, 0, 0, new Size(width, height));
                 }
+                bmp.Save(savePath);
                 if (isDigit) {
                     using (var engine = new TesseractEngine(TesseractDataPath, "eng", EngineMode.LstmOnly))
                     {

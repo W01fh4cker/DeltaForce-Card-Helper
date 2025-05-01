@@ -27,11 +27,22 @@ python CardHelper.py
 
 ## 1.2 C# 脚本（推荐）
 
-使用`VS 2022`打开`DeltaForce-Card-Helper/Src/Csharp/DeltaForce-Card-Helper.sln`工程文件，需要安装相关`nuget`包，并安装`Devexpress 22.x`版本，详情自行百度，懒得自己编译的用我打包好的即可。
+使用`VS 2022`打开`DeltaForce-Card-Helper/Src/Csharp/DeltaForce-Card-Helper.sln`工程文件，需要安装相关`nuget`包，并安装`Devexpress 22.x`版本，详情自行百度，懒得自己编译的用我打包好的即可。  
+> 为防止出现未知错误导致错误购买高价格卡，每次运行之前建议可以先填写参数1 1 1进行测试，看价格识别是否有异常，如果没有，再重新启动程序抢卡即可。
 
+同样的，以管理员权限启动，启动时请确保您的三角洲行动应用处于如下界面，并且搜索框不应有任何输入内容： 
+![](https://github.com/user-attachments/assets/69d56d40-b745-49d3-97b0-f45a8ebde2b6)
 填写参数，测试如图：
 
 ![](https://github.com/user-attachments/assets/3c42a996-5866-4412-876f-ae4e7e7b3240)
+
+识别失败？没关系，打开`DeltaForce-ScreenSnipperTool`工具，然后对价格区域进行红框截图：
+
+![](https://github.com/user-attachments/assets/e7785d21-02b7-4aa6-b5ed-ffe693e6627a)
+
+参数会保存到运行目录下的类似`res_20250430_212416.txt`的文件中，替换代码，然后重新编译即可：
+
+![](https://github.com/user-attachments/assets/6700660e-2b3d-47c5-8aa3-491eb514dd9d)
 
 # 二、说明与TODO
 
@@ -40,7 +51,11 @@ python CardHelper.py
 ⚠️ **高度实验性版本**
  本脚本处于早期开发阶段，核心功能尚未完善，仅实现基础界面框架与点击交互逻辑，仅供开发者学习技术原理或进行内部测试。
 
-- 2025.4.15 发布0.0.2-dev版本，修复了https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/1和https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/2。
+- 2025.4.30 发布0.0.2.2-dev版本，修复了https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/3 和 https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/4
+
+- 2025.4.16 发布0.0.2.1-dev版本，修复了https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/1
+
+- 2025.4.15 发布0.0.2-dev版本，修复了https://github.com/W01fh4cker/DeltaForce-Card-Helper/issues/2 
 
 ### ▋ 重要风险提示
 
